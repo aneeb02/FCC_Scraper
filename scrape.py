@@ -29,3 +29,5 @@ with open("articles.csv", "w") as articles:
       text = title.select('a')
       for t in text:
         csv_writer.writerow([t.text.strip(), t.get('href')])  # write title, url to csv file
+        
+  print("Successfully added all relevant articles in file!")
